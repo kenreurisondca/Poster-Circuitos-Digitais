@@ -1,11 +1,6 @@
-%==============================================================================
-%== template for LATEX poster =================================================
-%==============================================================================
-%
-%--A0 beamer slide-------------------------------------------------------------
 \documentclass[final]{beamer}
 \usepackage[orientation=portrait,size=a0,
-            scale=1.25         % font scale factor
+            scale=1.25
            ]{beamerposter}
 \usepackage{hyperref}
 \hypersetup{
@@ -15,44 +10,28 @@
     urlcolor=cyan,
 }
 \geometry{
-  hmargin=2.5cm, % little modification of margins
+  hmargin=2.5cm, 
 }
 
 %
 \usepackage[utf8]{inputenc}
-%\hyphenation{de-ter-mi-nar}
 
 \linespread{1.15}
-%
-%==The poster style============================================================
+
 \usetheme{sharelatex}
 
-%==Title, date and authors of the poster=======================================
-\title
-[Trabalho para 2a Unidade] % Conference
-{ % Poster title
-Mobilidade Urbana
-}
+\title[Trabalho para 2a Unidade]
+{ Mobilidade Urbana }
 
-\author{ % Authors
-Prof. Kennedy Lopes\inst{1}~\& Prof. Emanoel Chaves\inst{1}
-}
-\institute
-[Universidade Federal do Rio Grande do Norte] % General University
-{
-\inst{1} Universidade Federal do Rio Grande do Norte
-}
+\author{Prof. Kennedy Lopes\inst{1}~\& Prof. Emanoel Chaves\inst{1}}
+\institute[Universidade Federal do Rio Grande do Norte]{\inst{1} Universidade Federal do Rio Grande do Norte}
 \date{\today}
-
-
 
 \begin{document}
 \begin{frame}[t]
-%==============================================================================
+
 \begin{multicols}{3}
-%==============================================================================
-%==The poster content==========================================================
-%==============================================================================
+
 \input{introducao}
 \input{implementacao}
 
